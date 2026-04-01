@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Smart Soil Recommendation System</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+
+<header>
+
+<h1>🌱 Smart Soil Recommendation System</h1>
+
+<p>AI-Based Soil Health Advisory Dashboard</p>
+
+</header>
+
+
+<div class="container">
+
+
+<div class="card">
+
+<h2>Enter Soil Parameters</h2>
+
+
+<form id="soilForm">
+
+
+<div class="grid">
+
+
+<div>
+
+<label>Soil Moisture (%)</label>
+
+<select id="moisture">
+
+<option value="Low">Low (&lt;30%)</option>
+
+<option value="Medium">Medium (30–70%)</option>
+
+<option value="High">High (&gt;70%)</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label>Temperature (°C)</label>
+
+<select id="temperature">
+
+<option value="Low">Low (&lt;20°C)</option>
+
+<option value="Medium">Medium (20–35°C)</option>
+
+<option value="High">High (&gt;35°C)</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label>Humidity (%)</label>
+
+<select id="humidity">
+
+<option value="Low">Low (&lt;40%)</option>
+
+<option value="Medium">Medium (40–70%)</option>
+
+<option value="High">High (&gt;70%)</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label>Nitrogen (kg/ha)</label>
+
+<select id="nitrogen">
+
+<option value="Low">Low (&lt;50)</option>
+
+<option value="Medium">Medium (50–100)</option>
+
+<option value="High">High (&gt;100)</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label>Phosphorus (kg/ha)</label>
+
+<select id="phosphorus">
+
+<option value="Low">Low (&lt;30)</option>
+
+<option value="Medium">Medium (30–60)</option>
+
+<option value="High">High (&gt;60)</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label>Potassium (kg/ha)</label>
+
+<select id="potassium">
+
+<option value="Low">Low (&lt;40)</option>
+
+<option value="Medium">Medium (40–80)</option>
+
+<option value="High">High (&gt;80)</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label>Soil pH Level</label>
+
+<select id="ph">
+
+<option value="Acidic">Acidic (&lt;6)</option>
+
+<option value="Neutral">Neutral (6–7.5)</option>
+
+<option value="Alkaline">Alkaline (&gt;7.5)</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label>Rainfall (mm/week)</label>
+
+<select id="rainfall">
+
+<option value="Low">Low (&lt;20)</option>
+
+<option value="Medium">Medium (20–50)</option>
+
+<option value="High">High (&gt;50)</option>
+
+</select>
+
+</div>
+
+
+</div>
+
+
+<button type="submit">
+
+Analyze Soil Condition
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+<div class="result-card">
+
+<h2>Recommendation Output</h2>
+
+
+<div id="result" class="result-grid">
+
+Waiting for input...
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<footer>
+
+<p>Software-Based IoT Smart Agriculture Prototype</p>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+
+</html>
